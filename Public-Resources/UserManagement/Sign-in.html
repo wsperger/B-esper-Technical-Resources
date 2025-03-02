@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sign Up</title>
+  <!-- 
+    This custom page follows Azure AD B2C HTML template guidelines:
+      • Only allowed HTML tags/attributes are used.
+      • All scripts (if needed) must be added in the head with defer or async.
+      • The content is minimal to ensure the injected Azure AD B2C UI renders correctly.
+  -->
   <style>
     /* Reset and basic styles */
     * {
@@ -38,7 +45,7 @@
       max-width: 200px;
       height: auto;
     }
-    /* Sign-Up header */
+    /* Sign-Up header styling */
     .signup-header {
       font-size: 1.8rem;
       margin-bottom: 25px;
@@ -48,7 +55,7 @@
     #api {
       width: 100%;
     }
-    /* Optional: style inputs and button if they aren’t overridden by Azure */
+    /* Optional styling for inputs and buttons if not overridden by Azure */
     input[type="text"],
     input[type="email"],
     input[type="password"] {
@@ -73,6 +80,11 @@
       background: #005a9e;
     }
   </style>
+  <!-- 
+    To add custom JavaScript (e.g., for password toggling or terms of use),
+    include it here with the defer attribute. Example:
+    <script src="custom-script.js" defer></script>
+  -->
 </head>
 <body>
   <div class="container">
