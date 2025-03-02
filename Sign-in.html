@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <style>
+    /* Reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    /* Container for the sign-up form */
+    .container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    /* Logo styling */
+    .logo {
+      margin-bottom: 20px;
+    }
+    .logo img {
+      max-width: 200px;
+      height: auto;
+    }
+    /* Sign-Up header */
+    .signup-header {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #0078d4; /* Azure blue */
+    }
+    /* Placeholder for Azure AD B2C injected content */
+    #api {
+      width: 100%;
+    }
+    /* Optional: style inputs and button if they aren’t overridden by Azure */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #0078d4;
+      border: none;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #005a9e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Company Logo -->
+    <div class="logo">
+      <img src="Images/Wide_logo.png" alt="Company Logo" />
+    </div>
+    <!-- Sign-Up Page Header -->
+    <div class="signup-header">Sign Up</div>
+    <!-- Azure AD B2C injected content goes here -->
+    <div id="api"></div>
+  </div>
+</body>
+</html>
